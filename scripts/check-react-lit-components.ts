@@ -3,7 +3,7 @@
  * fix the correct type. However, manual intervention is still necessary in case stuff breaks lol 
  */
 import path from "path"
-import glob from "glob"
+import { glob } from "glob"
 
 const _cwd = process.cwd()
 
