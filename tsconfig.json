@@ -1,6 +1,19 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "node16",
+
+    "lib": ["esnext"],
     "strict": true,
-    "esModuleInterop": true
-  }
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }
