@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "moduleResolution": "bundler",
+    "moduleDetection": "force"
+  },
+  "include": ["src"],
+  "extends": [
+    "@auburn-framework/tsconfig/base.json",
+    "@auburn-framework/tsconfig/lint.json"
+  ]
+}

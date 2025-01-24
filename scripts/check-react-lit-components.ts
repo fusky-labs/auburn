@@ -11,7 +11,10 @@ const mapPaths = (...dirs: string[]) => {
   return dirs.map((dir) => path.join(_cwd, dir))
 }
 
-const AB_CORE_DIR = "packages/auburn-core/src"
-const AB_CORE_COMPONENTS = mapPaths(...(await glob.glob(`${AB_CORE_DIR}/**/*.ts`, { ignore: `${AB_CORE_DIR}/vite-env.d.ts` })))
+const AB_CORE_DIR = "packages/@auburn-core/src"
+const AB_REACT_DIR = "packages/@auburn-react/src"
 
-console.log(AB_CORE_COMPONENTS)
+const AB_CORE_COMPONENTS = mapPaths(...(await glob.glob(`${AB_CORE_DIR}/**/*.ts`, { ignore: `${AB_CORE_DIR}/vite-env.d.ts` })))
+const AB_REACT_COMPONENTS = mapPaths(...(await glob.glob(`${AB_REACT_DIR}/**/*.{ts,tsx}`, { ignore: `${AB_REACT_DIR}/vite-env.d.ts` })))
+
+console.log(AB_CORE_COMPONENTS, AB_REACT_COMPONENTS)

@@ -1,6 +1,6 @@
 import { html } from "lit"
 import { customElement } from "lit/decorators.js"
-import { AuburnBaseElement } from "./base-element"
+import { AuburnBaseElement } from "./base-element.ts"
 
 // todo create custom eslint rule at match customElement decorator with the HTMLElementTagNameMap global interface
 @customElement('auburn-window')

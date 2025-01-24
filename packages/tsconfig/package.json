@@ -1,0 +1,9 @@
+{
+  "name": "@auburn-framework/tsconfig",
+  "private": true,
+  "version": "0.0.0",
+  "files": [
+    "base.json",
+    "lint.json"
+  ]
+}

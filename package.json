@@ -9,6 +9,7 @@
     "component:check": "node --loader ts-node/esm scripts/check-react-lit-components.ts"
   },
   "devDependencies": {
+    "@auburn-framework/tsconfig": "workspace:*",
     "@types/node": "^22.10.7",
     "concurrently": "^9.1.2",
     "glob": "^11.0.1",
