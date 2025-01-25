@@ -8,7 +8,7 @@
   },
   "include": ["src"],
   "extends": [
-    "@auburn-framework/tsconfig/base.json",
+    "@auburn-framework/tsconfig/base",
     "@auburn-framework/tsconfig/lint.json"
   ]
 }

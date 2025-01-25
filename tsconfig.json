@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "nodenext"
   },
-  "extends": "@auburn-framework/tsconfig/base.json",
+  "extends": "@auburn-framework/tsconfig/base",
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
