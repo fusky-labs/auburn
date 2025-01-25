@@ -2,7 +2,7 @@
   "name": "auburn-os-framework",
   "version": "1.0.0",
   "description": "A framework for building web operating systems",
-  "author": "Kuroji Fusky <hello@kurojifusky.com>",
+  "author": "Kerby Keith Aquino <hello@kurojifusky.com>",
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
