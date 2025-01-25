@@ -51,6 +51,8 @@ export default tseslint.config(
     rules: {
       ...globalRules,
       ...reactHooks.configs.recommended.rules,
+
+      "react/no-unescaped-entities": "off"
     }
   }
 )

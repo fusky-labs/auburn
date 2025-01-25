@@ -13,7 +13,7 @@ export default {
     "@media (prefers-color-scheme: dark) { & }"
   ]],
 
-  content: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ["./src/**/*.{html,astro,js,ts,mdx}"],
 
   theme: {
     extend: {

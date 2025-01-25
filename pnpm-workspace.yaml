@@ -1,5 +1,5 @@
 packages:
-  - apps/docs
+  - docs
   - packages/@auburn-core
   - packages/@auburn-react
   - packages/tsconfig

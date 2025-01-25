@@ -1,0 +1,65 @@
+---
+import "@fontsource/inter/400.css"
+import "@fontsource/inter/600.css"
+import "@fontsource/inter/700.css"
+import "@fontsource/jetbrains-mono"
+
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
+
+interface Props {
+  title: string
+  description?: string
+}
+
+const { title, description } = Astro.props
+const siteTitle = "Auburn"
+
+const { pathname } = Astro.url
+
+const canonicalUrl = new URL(pathname, Astro.site ?? "http://localhost:4321")
+const _title = pathname !== "/" ? `${title} | ${siteTitle}` : title
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{_title}</title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+
+    {/* OG tags */}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_title" content={siteTitle} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+
+    {
+      /* Twitter tags, won't include "twitter:title" since it falls back to "og:*" meta tags */
+    }
+    <meta name="twitter:url" content={canonicalUrl} />
+
+    <link rel="canonical" href={canonicalUrl} />
+
+    {/* Sitemap */}
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <slot name="other-meta" />
+  </head>
+
+  <body
+    class="font-inter antialiased dark:text-white dark:bg-neutral-950 overflow-x-hidden prose-headings:font-bold"
+  >
+    <div id="main-content">
+      <Navbar />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>
