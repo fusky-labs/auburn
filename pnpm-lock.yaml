@@ -102,16 +102,19 @@ importers:
       lit:
         specifier: ^3.2.1
         version: 3.2.1
-    devDependencies:
-      '@auburn-framework/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
       typescript:
         specifier: ~5.6.2
         version: 5.6.3
       vite:
         specifier: ^6.0.5
         version: 6.0.11(@types/node@22.10.10)(jiti@1.21.7)(yaml@2.7.0)
+    devDependencies:
+      '@auburn-framework/shared':
+        specifier: workspace:*
+        version: link:../shared
+      '@auburn-framework/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
 
   packages/@auburn-react:
     dependencies:
@@ -122,6 +125,9 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@auburn-framework/shared':
+        specifier: workspace:*
+        version: link:../shared
       '@auburn-framework/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
@@ -146,6 +152,8 @@ importers:
       vite:
         specifier: ^6.0.5
         version: 6.0.11(@types/node@22.10.10)(jiti@1.21.7)(yaml@2.7.0)
+
+  packages/shared: {}
 
   packages/tsconfig: {}
 
