@@ -1,18 +1,15 @@
+test-results
+node_modules
+
 # Output directories
 .output
 .vercel
 .netlify
 .wrangler
-/.svelte-kit
-/build
+.svelte-kit
+build
 dist
 dist-ssr
-
-# Test results
-test-results
-
-# Node modules
-node_modules
 
 # OS generated files
 .DS_Store

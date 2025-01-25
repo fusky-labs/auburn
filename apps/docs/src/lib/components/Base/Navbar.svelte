@@ -1,0 +1,6 @@
+<script lang="ts"></script>
+
+<nav class="flex gap-x-1.5">
+  <div class="flex-1">Auburn</div>
+  <div class="flex-shrink-0"></div>
+</nav>
