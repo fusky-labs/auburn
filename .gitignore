@@ -3,10 +3,10 @@ node_modules
 .idea
 
 # generated types
-docs/.astro
+.astro
 
 # Output directories
-docs/dist
+dist
 
 # OS generated files
 .DS_Store
